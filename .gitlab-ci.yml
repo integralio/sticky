@@ -22,8 +22,6 @@ build:
     paths:
     - build
     - .gradle
-  tags:
-  - local
 
 
 test:
@@ -35,3 +33,6 @@ test:
     paths:
     - build
     - .gradle
+
+tags:
+- local
