@@ -33,6 +33,3 @@ test:
     paths:
     - build
     - .gradle
-
-tags:
-- local
