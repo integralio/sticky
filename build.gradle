@@ -18,6 +18,7 @@ apply plugin: 'io.spring.dependency-management'
 group = 'io.integral'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
     mavenCentral()
@@ -30,6 +31,13 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-rest')
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('org.flywaydb:flyway-core')
+    compile('javax.xml.bind:jaxb-api:2.2.11')
     runtime('com.h2database:h2')
     testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+test {
+    testLogging {
+        exceptionFormat = 'full'
+    }
 }
