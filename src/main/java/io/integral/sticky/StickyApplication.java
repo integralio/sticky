@@ -10,3 +10,4 @@ public class StickyApplication {
         SpringApplication.run(StickyApplication.class, args);
     }
 }
+
